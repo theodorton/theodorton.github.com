@@ -10,5 +10,14 @@
 	<atom:link href="https://theodorton.github.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Gamedev</title>
+      <link>https://theodorton.github.com/categories/gamedev/</link>
+      <pubDate>Sat, 21 Apr 2018 13:00:00 +0200</pubDate>
+      
+      <guid>https://theodorton.github.com/categories/gamedev/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
