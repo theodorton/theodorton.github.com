@@ -46,7 +46,7 @@ We didn't get to the "Adventure gear"-part of the tutorial, but the game has som
 
 ### Optimal placement of ladders and monsters
 
-The tutorial code places the ladder in a random room. After implementing A* pathfinding, I figured I could use that to calculate the distance from the player's starting position and make sure the ladder waso somewhat harder to reach. For monsters I avoided spawning monsters  and items in the first room of each floor. For new players, I think it makes sense to let them figure out the movement and FOV in the first room before proceeding.
+The tutorial code places the ladder in a random room. After implementing A* pathfinding, I figured I could use that to calculate the distance from the player's starting position and make sure the ladder was somewhat harder to reach. For monsters I avoided spawning monsters  and items in the first room of each floor. For new players, I think it makes sense to let them figure out the movement and FOV in the first room before proceeding.
 
 ### Inferred stats from level
 
