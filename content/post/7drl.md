@@ -1,7 +1,6 @@
 ---
 title: "7DRL"
-date: 2018-04-20T23:07:42+02:00
-draft: true
+date: 2018-04-21T13:00:00+02:00
 categories: [ "Gamedev" ]
 ---
 
