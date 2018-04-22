@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on My New Hugo Site</title>
-    <link>https://theodorton.github.com/categories/</link>
-    <description>Recent content in Categories on My New Hugo Site</description>
+    <title>Categories on theodorton.github.io</title>
+    <link>https://theodorton.github.io/categories/</link>
+    <description>Recent content in Categories on theodorton.github.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://theodorton.github.com/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://theodorton.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Gamedev</title>
-      <link>https://theodorton.github.com/categories/gamedev/</link>
+      <link>https://theodorton.github.io/categories/gamedev/</link>
       <pubDate>Sat, 21 Apr 2018 13:00:00 +0200</pubDate>
       
-      <guid>https://theodorton.github.com/categories/gamedev/</guid>
+      <guid>https://theodorton.github.io/categories/gamedev/</guid>
       <description></description>
     </item>
     
