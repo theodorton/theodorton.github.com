@@ -1,6 +1,6 @@
-baseURL = "https://theodorton.github.com/"
+baseURL = "https://theodorton.github.io/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "theodorton.github.io"
 theme = "hugo-natrium-theme"
 
 preserveTaxonomyNames = true
