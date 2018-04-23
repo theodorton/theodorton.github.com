@@ -14,7 +14,7 @@ I started last Friday at 21:30 and stopped programming around 21:15 today when m
 
 <div style="width:100%;height:0;padding-bottom:63%;position:relative;"><iframe src="https://giphy.com/embed/ZNVCwBR1FGVUjqjZB2" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
 
-I didn't have any experience playing roguelikes–except from the basic mechanics–so I learned a ton from the process. A tutorial for Python and libtcod exists, and it seems like the usual starting point for most roguelike developers. Coming from web development and a heavy object- and pattern-oriented programming world, the tutorial comes off as pretty pragmatic to me. This turned out to create som unexpected problems as I deviated from the example code and attempted to refactor my code. More on that later.
+I didn't have any experience playing roguelikes–except from the basic mechanics–so I learned a ton from the process. A [tutorial for Python and libtcod](http://roguebasin.com/index.php?title=Complete_Roguelike_Tutorial,_using_python%2Blibtcod) exists, and it seems like the usual starting point for most roguelike developers. Coming from web development and a heavy object- and pattern-oriented programming world, the tutorial comes off as pretty pragmatic to me. This turned out to create some unexpected problems as I deviated from the example code and attempted to refactor my code. More on that later.
 
 Alex, a friend of mine did the graphics and audio. We've been working on games before, but never made something as playable as this. It made a big difference to the play experience and making it more accessible compared to an ASCII-experience. He also came up with the theme, title and backstory for the game.
 
@@ -22,7 +22,7 @@ In Skyspire, you're a citizen of a poor country-side village. One day a tower ap
 
 The game is pretty playable, although the randomness of the monster and item spawning can make some of the playthroughs harder (I guess sometimes impossible). I spent time adjusting the tutorial code to balance the progression of the game, but it's nowhere near perfect yet.
 
-In learned a lot about the roguelike genre, but I think there is more than enough material out there for you to read already. But I do have some tips about the process that I would apply personally next time.
+I learned a lot about the roguelike genre, but I think there is more than enough material out there for you to read already. But I do have some tips about the process that I would apply personally next time.
 
 ### Schedule your sessions
 
