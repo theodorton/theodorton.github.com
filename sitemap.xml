@@ -3,8 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://theodorton.github.io/til-january-2020/</loc>
+    <lastmod>2020-01-31T06:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://theodorton.github.io/7drl/</loc>
     <lastmod>2018-04-21T13:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://theodorton.github.io/about/</loc>
+    <lastmod>2018-04-21T12:26:18+02:00</lastmod>
   </url>
   
   <url>
@@ -19,8 +29,20 @@
   </url>
   
   <url>
+    <loc>https://theodorton.github.io/page/</loc>
+    <lastmod>2018-04-21T12:26:18+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://theodorton.github.io/post/</loc>
-    <lastmod>2018-04-21T13:00:00+02:00</lastmod>
+    <lastmod>2020-01-31T06:00:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://theodorton.github.io/categories/til/</loc>
+    <lastmod>2020-01-31T06:00:00+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -31,7 +53,7 @@
   
   <url>
     <loc>https://theodorton.github.io/</loc>
-    <lastmod>2018-04-21T13:00:00+02:00</lastmod>
+    <lastmod>2020-01-31T06:00:00+02:00</lastmod>
     <priority>0</priority>
   </url>
   

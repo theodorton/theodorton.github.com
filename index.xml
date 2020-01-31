@@ -6,9 +6,22 @@
     <description>Recent content on theodorton.github.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Apr 2018 13:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 31 Jan 2020 06:00:00 +0200</lastBuildDate>
     
         <atom:link href="https://theodorton.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+    <item>
+      <title>TIL: January 2020</title>
+      <link>https://theodorton.github.io/til-january-2020/</link>
+      <pubDate>Fri, 31 Jan 2020 06:00:00 +0200</pubDate>
+      
+      <guid>https://theodorton.github.io/til-january-2020/</guid>
+      <description>Back in August 2018 I started the habit of writing down stuff I learn. I had come across a lot of TIL posts on reddit, which inspired me to start building a library of personal knowledge.
+Since then I&amp;rsquo;ve had some months on and off, some more documented than others. I keep a TIL list in my Workflowy that I like to refer back to.
+This year I&amp;rsquo;d like to become better at taking notes of the random facts, computer tricks and techniques I run across.</description>
+    </item>
     
     
     
@@ -21,6 +34,8 @@
       <description>tl;dr My friend and I made a roguelike named Skyspire. It&amp;rsquo;s our first roguelike, and first game in a long while. You can find the code on Github.
 A week ago I decided to do a 7DRL Challenge. I&amp;rsquo;ve been tinkering with different game engines since middle school, but I tend to start projects without finishing. I read about the 7DRL concept some time last year, and I figured it seemed like a good idea to actually get to something playable.</description>
     </item>
+    
+    
     
     
   </channel>
