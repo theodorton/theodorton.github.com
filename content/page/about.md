@@ -1,7 +1,7 @@
 ---
 title: "About"
 date: 2018-04-21T12:26:18+02:00
-draft: true
+draft: false
 ---
 
-28 year old software developer from Norway.
+I like to code.
