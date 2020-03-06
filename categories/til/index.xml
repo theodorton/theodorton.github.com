@@ -6,10 +6,20 @@
     <description>Recent content in TIL on theodorton.github.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 31 Jan 2020 06:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 06 Mar 2020 18:00:00 +0200</lastBuildDate>
     
 	<atom:link href="https://theodorton.github.io/categories/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>TIL: February 2020</title>
+      <link>https://theodorton.github.io/til-february-2020/</link>
+      <pubDate>Fri, 06 Mar 2020 18:00:00 +0200</pubDate>
+      
+      <guid>https://theodorton.github.io/til-february-2020/</guid>
+      <description>I started last month setting up a Linux server at home that I use for remote VS Code work. A lot of learning followed as I&amp;rsquo;ve never use Linux outside a server environment, except for some short periods of fiddling with Pop!_OS. I&amp;rsquo;ll probably write up a longer article later, but for now the majority of my TILs the past month has been related to that project.
+Linux  You can run simple GUI applications like xeyes and git gui over SSH using X11 and XQuartz How to run VSCode remotely on a linux server with VS Code Remote/SSH extension You can setup default ports to forward on a remote VSCode workspace  ̂ + ⎇ + T  toggles the Terminal panel in VSCode tmux integrates nicely with iterm2 Use tmux select-layout even-vertical to resize panes evenly tmux -CC starts in Control mode (and disables eCho) How to fix iTerm 2 so it uses Natural Text Editing preset (via @sobstel) neofetch - the CLI equivalent to &amp;ldquo;About my computer&amp;rdquo; You can restrict which commands that can be run over SSH in authorized_keys How to change hostname on ubuntu  Productivity/development  ActiveRecord has a comment keyword argument for add_column that works with postgres How to fix HMR in expo react-navigation Assign env vars to constants and use stub_const over mocking env vars in tests git checkout - navigates back to your previously checked out branch similar to cd - @ in slack shows recent activity (via @jennysjogren) Heroku supports multiple credentials for their Postgres databases  Random  The brain has 80 billion neurons&amp;hellip; How to remove stearin stains from clothes: use a paper towel and an iron BTDTBTTS; Been There Done That Bought The T-Shirt Variomatic transmission; drives as fast in reverse  Stuff I&amp;rsquo;ve discovered but didn&amp;rsquo;t have time to pursue yet  grasshopper / rhino parametric cad Geonames.</description>
+    </item>
     
     <item>
       <title>TIL: January 2020</title>
