@@ -6,10 +6,19 @@
     <description>Recent content in Posts on theodorton.github.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Mar 2020 18:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 18 Apr 2020 23:00:00 +0200</lastBuildDate>
     
 	<atom:link href="https://theodorton.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>TIL: February 2020</title>
+      <link>https://theodorton.github.io/til-february-2020/</link>
+      <pubDate>Sat, 18 Apr 2020 23:00:00 +0200</pubDate>
+      
+      <guid>https://theodorton.github.io/til-february-2020/</guid>
+      <description>Linux  How to mount APFS on linux  remember to sudo apt install libfuse3-dev  How to install and run folding@home on linux Linux has a timeout command You can be creative about clearing your terminal How to use MKL on AMD CPU source  Product[ivity]/development  Rails 5+ has something called ignored_columns (see this and that) rails db:forward, its opposite of db:rollback and their brainchild db:migrate:redo Postgres has a [verbose] IS NOT DISTINCT FROMoperator source Postgres has support for recursive tables via WITH RECURSIVE source You can create temporary tables in Postgres wirh FROM (VALUES ) source Google Sheets has a QUERY function that accepts SQL source You can use !</description>
+    </item>
     
     <item>
       <title>TIL: February 2020</title>

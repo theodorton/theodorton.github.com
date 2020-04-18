@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.40.1" />
+<meta name="generator" content="Hugo 0.57.2" />
 
 
 <title>TIL: February 2020 - theodorton.github.io</title>
@@ -51,66 +51,62 @@
   <article class="article">
     <h1 class="article-title">TIL: February 2020</h1>
     
-    <span class="article-date">2020-03-06</span>
+    <span class="article-date">2020-04-18</span>
     
 
     <div class="article-content">
       
 
-<p>I started last month setting up a Linux server at home that I use for remote VS Code work. A lot of learning followed as I&rsquo;ve never use Linux outside a server environment, except for some short periods of fiddling with Pop!_OS. I&rsquo;ll probably write up a longer article later, but for now the majority of my TILs the past month has been related to that project.</p>
-
 <h2 id="linux">Linux</h2>
 
 <ul>
-<li>You can run simple GUI applications like <code>xeyes</code> and <code>git gui</code> over SSH using X11 and XQuartz</li>
-<li><a href="https://code.visualstudio.com/docs/remote/ssh">How to run VSCode remotely on a linux server with VS Code Remote/SSH extension</a></li>
-<li><a href="https://share.getcloudapp.com/RBudYLl2">You can setup default ports to forward on a remote VSCode workspace</a></li>
-<li><code>  ̂ + ⎇ + T </code> toggles the Terminal panel in VSCode</li>
-<li><a href="https://iterm2.com/documentation-tmux-integration.html">tmux integrates nicely with iterm2</a></li>
-<li>Use <code>tmux select-layout even-vertical</code> to resize panes evenly</li>
-<li><code>tmux -CC</code> starts in <strong>C</strong>ontrol mode (and disables e<strong>C</strong>ho)</li>
-<li><a href="https://apple.stackexchange.com/questions/154292/iterm-going-one-word-backwards-and-forwards/293988">How to fix iTerm 2 so it uses Natural Text Editing preset</a> (via @sobstel)</li>
-<li>neofetch - the CLI equivalent to &ldquo;About my computer&rdquo;</li>
-<li><a href="https://unix.stackexchange.com/questions/395776/how-to-remote-execute-ssh-command-a-sudo-command-without-password">You can restrict which commands that can be run over SSH in <code>authorized_keys</code></a></li>
-<li><a href="https://linuxize.com/post/how-to-change-hostname-on-ubuntu-18-04/">How to change hostname on ubuntu</a></li>
-</ul>
-
-<h2 id="productivity-development">Productivity/development</h2>
+<li><a href="https://linuxnewbieguide.org/how-to-mount-macos-apfs-disk-volumes-in-linux/#Bummer_Read_only">How to mount APFS on linux</a>
 
 <ul>
-<li>ActiveRecord has a <code>comment</code> keyword argument for <code>add_column</code> that works with postgres</li>
-<li><a href="https://github.com/react-navigation/react-navigation/issues/6379#issuecomment-568012809">How to fix HMR in expo react-navigation</a></li>
-<li>Assign env vars to constants and use <code>stub_const</code> over mocking env vars in tests</li>
-<li><code>git checkout -</code> navigates back to your previously checked out branch similar to <code>cd -</code></li>
-<li>@ in slack shows recent activity (via @jennysjogren)</li>
-<li><a href="https://devcenter.heroku.com/articles/heroku-postgresql-credentials">Heroku supports multiple credentials for their Postgres databases</a></li>
+<li>remember to <code>sudo apt install libfuse3-dev</code></li>
+</ul></li>
+<li>How to install and run folding@home on linux</li>
+<li>Linux has a timeout command</li>
+<li><a href="https://adammusciano.com/2020/03/04/2020-03-04-clear-your-terminal-in-style/">You can be creative about clearing your terminal</a></li>
+<li>How to use MKL on AMD CPU <a href="https://www.reddit.com/r/matlab/comments/dxn38s/howto_force_matlab_to_use_a_fast_codepath_on_amd/">source</a></li>
+</ul>
+
+<h2 id="product-ivity-development">Product[ivity]/development</h2>
+
+<ul>
+<li>Rails 5+ has something called <code>ignored_columns</code> (see <a href="https://blog.bigbinary.com/2016/05/24/rails-5-adds-active-record-ignored-columns.html">this</a> and <a href="https://github.com/drivy/birdspotting">that</a>)</li>
+<li><code>rails db:forward</code>, its opposite of <code>db:rollback</code> and their brainchild <code>db:migrate:redo</code></li>
+<li>Postgres has a [verbose] <code>IS NOT DISTINCT FROM</code>operator <a href="https://news.ycombinator.com/item?id=22495912">source</a></li>
+<li>Postgres has support for recursive tables via <code>WITH RECURSIVE</code> <a href="https://www.postgresql.org/docs/9.1/queries-with.html">source</a></li>
+<li>You can create temporary tables in Postgres wirh <code>FROM (VALUES )</code> <a href="https://www.postgresql.org/docs/9.0/queries-table-expressions.html">source</a></li>
+<li>Google Sheets has a QUERY function that accepts SQL <a href="https://developers.google.com/chart/interactive/docs/querylanguage">source</a></li>
+<li>You can use !g in DuckDuckGo to Google <a href="https://duckduckgo.com/bang">source</a></li>
+<li>There&rsquo;s a better alternative to <code>||</code> in Javascript - the nullish coalescing operator <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_Coalescing_Operator">source</a></li>
+<li><a href="https://github.com/luruke/browser-2020">The web can do many things&hellip;</a></li>
+<li>How to enable OTP AutoFill in HTML on Apple devices <a href="https://developer.apple.com/documentation/security/password_autofill/enabling_password_autofill_on_an_html_input_element">source</a></li>
+<li>pgadmin has query history</li>
+<li><a href="https://blog.excalidraw.com/end-to-end-encryption/">How to do E2E encryption in browser</a></li>
+<li>You can hold the option-key on in Excel on Mac to snap a chart size to a cell</li>
+<li>You can toggle hidden files in finder with cmd shift .</li>
+<li>The UI difference between checkboxes and switches <a href="https://news.ycombinator.com/item?id=22732624">source</a></li>
 </ul>
 
 <h2 id="random">Random</h2>
 
 <ul>
-<li>The brain has 80 billion neurons&hellip;</li>
-<li>How to remove stearin stains from clothes: use a paper towel and an iron</li>
-<li>BTDTBTTS; Been There Done That Bought The T-Shirt</li>
-<li><a href="https://en.m.wikipedia.org/wiki/Variomatic">Variomatic transmission; drives as fast in reverse</a></li>
+<li>Lower extremities is a <em>fancy</em> way of saying legs</li>
+<li>You can set a preferrede language per app in iOS 13</li>
+<li>That the &ldquo;your mother is a hamster and your father smells of elderberries&rdquo; line from Monty Python and the Holy Grail isn&rsquo;t just randomly made up. It&rsquo;s a shrewd way of insulting someone, but you would need to know the context that hamsters are known for their promiscuity, so he was calling the mother a slut, and smelling of elderberries is in the context that elderberries was used by poor people to brew their own alchohol, i.e. a drunk. <a href="https://www.reddit.com/r/videos/comments/fcpptj/this_is_one_of_the_most_fascinating_ethical/fjd44yr/">source</a></li>
+<li>How space photography gets its color <a href="https://www.reddit.com/r/space/comments/ff4348/the_top_photo_was_my_first_attempt_ever_at/fjw1epn/">source</a></li>
+<li><a href="https://www.reddit.com/r/todayilearned/comments/fgc1gr/til_of_kangaroo_words_that_is_a_word_that/">Kangaroo words</a></li>
+<li>How to use the arpeggiator settings on an MPK Nini II: hold down arpeggiator on while pressing a key to set the interval</li>
+<li>Blooming (mixing water, sugar and yeast and checking whether it &ldquo;blooms&rdquo;) is not something you do to make the dough rise, it&rsquo;s a way of checking if yeast is dead</li>
+<li>The only browser you can use for Netflix 4K is Microsoft Edge <a href="https://news.ycombinator.com/item?id=22631554">source</a></li>
+<li>Common term in [data] modeling: Shit In Shit Out / Garbage In Garbage Out</li>
+<li>How to make a <a href="https://en.m.wikipedia.org/wiki/French_75_(cocktail)">French 75</a></li>
+<li>You can use water from chickpeas to <a href="https://www.youtube.com/watch?v=LfzKfD_WuDM">replace egg whites</a></li>
+<li>When roosters make their sound, their ears close up so that they won&rsquo;t become deaf <a href="https://www.reddit.com/r/AskReddit/comments/fsc8yd/what_is_a_completely_random_fact/fm0ocw6/">source</a></li>
 </ul>
-
-<h2 id="stuff-i-ve-discovered-but-didn-t-have-time-to-pursue-yet">Stuff I&rsquo;ve discovered but didn&rsquo;t have time to pursue yet</h2>
-
-<ul>
-<li>grasshopper / rhino parametric cad</li>
-<li>Geonames.org</li>
-<li><a href="https://github.com/drivy/delayed_deprecation">delayed_deprecation</a></li>
-<li><a href="https://code.visualstudio.com/docs/editor/emmet">Emmet</a></li>
-<li><a href="https://github.com/stryker-mutator/stryker">Stryker</a></li>
-<li><a href="https://news.ycombinator.com/item?id=22307270">OpenChakra</a>
-– <a href="https://openupm.com/">OpenUPM</a></li>
-<li>docker-entrypoint.sh</li>
-</ul>
-
-<hr />
-
-<p><a href="https://www.sobstel.org/">@sobstel</a>, a colleague of mine, joined the habit and posted his February learnings too. <a href="https://www.sobstel.org/blog/til-february-2020/">Check them out</a>!</p>
 
     </div>
  
