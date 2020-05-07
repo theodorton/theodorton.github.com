@@ -6,10 +6,19 @@
     <description>Recent content in Posts on theodorton.github.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 18 Apr 2020 23:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 01 May 2020 10:57:00 +0200</lastBuildDate>
     
 	<atom:link href="https://theodorton.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>TIL: April 2020</title>
+      <link>https://theodorton.github.io/til-april-2020/</link>
+      <pubDate>Fri, 01 May 2020 10:57:00 +0200</pubDate>
+      
+      <guid>https://theodorton.github.io/til-april-2020/</guid>
+      <description>Linux  Press H to toggle user threads in htop Click headings in htop to sort processes How to check the CPU (core) clock speed  Product[ivity]/development  Adding an Apple mail/calendar account on an iOS device lets you use it for two-factor authentication VATLayer.com can check the VAT status of a company if you&amp;rsquo;re building a B2B service You can switch between linked versions of libraries with brew switch {cask} {version} You get more accurate results if you avoid using spaces when fuzzy searching for files in Visual Studio Code You can use an X-Robots-Tag header as an alternative to a meta tag rails console has a --sandbox argument that rolls back database changes ActiveRecord has support for partial indices aasm has before_enter and after_enter callbacks for state transitions rspec-activejob has a .</description>
+    </item>
     
     <item>
       <title>TIL: March 2020</title>
