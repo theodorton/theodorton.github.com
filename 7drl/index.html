@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.57.2" />
+<meta name="generator" content="Hugo 0.68.3" />
 
 
 <title>7DRL - theodorton.github.io</title>
@@ -55,82 +55,43 @@
     
 
     <div class="article-content">
-      
-
-<p><em>tl;dr My friend and I made a roguelike named Skyspire. It&rsquo;s our first roguelike, and first game in a long while. You can find the <a href="https://github.com/geppetto-apps/7drl">code on Github</a>.</em></p>
-
-<hr />
-
+      <p><em>tl;dr My friend and I made a roguelike named Skyspire. It&rsquo;s our first roguelike, and first game in a long while. You can find the <a href="https://github.com/geppetto-apps/7drl">code on Github</a>.</em></p>
+<hr>
 <p>A week ago I decided to do a 7DRL Challenge. I&rsquo;ve been tinkering with different game engines since middle school, but I tend to start projects without finishing. I read about the 7DRL concept some time last year, and I figured it seemed like a good idea to actually get to something playable.</p>
-
 <p>I started last Friday at 21:30 and stopped programming around 21:15 today when my laptop battery drained out. (I forgot my charger at work, so I had to go get it to write this blog post.)</p>
-
-<div style="width:100%;height:0;padding-bottom:63%;position:relative;"><iframe src="https://giphy.com/embed/ZNVCwBR1FGVUjqjZB2" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
-
+<!-- raw HTML omitted -->
 <p>I didn&rsquo;t have any experience playing roguelikes–except from the basic mechanics–so I learned a ton from the process. A <a href="http://roguebasin.com/index.php?title=Complete_Roguelike_Tutorial,_using_python%2Blibtcod">tutorial for Python and libtcod</a> exists, and it seems like the usual starting point for most roguelike developers. Coming from web development and a heavy object- and pattern-oriented programming world, the tutorial comes off as pretty pragmatic to me. This turned out to create some unexpected problems as I deviated from the example code and attempted to refactor my code. More on that later.</p>
-
 <p>Alex, a friend of mine did the graphics and audio. We&rsquo;ve been working on games before, but never made something as playable as this. It made a big difference to the play experience and making it more accessible compared to an ASCII-experience. He also came up with the theme, title and backstory for the game.</p>
-
 <p>In Skyspire, you&rsquo;re a citizen of a poor country-side village. One day a tower appeared out of nowhere outside the city. No one but the bravest dare to enter the tower to challenge its power, but no one has managed to get to the top floor yet. Your goal is to enter and slay the as much of the evil within as possible.</p>
-
 <p>The game is pretty playable, although the randomness of the monster and item spawning can make some of the playthroughs harder (I guess sometimes impossible). I spent time adjusting the tutorial code to balance the progression of the game, but it&rsquo;s nowhere near perfect yet.</p>
-
 <p>I learned a lot about the roguelike genre, but I think there is more than enough material out there for you to read already. But I do have some tips about the process that I would apply personally next time.</p>
-
 <h3 id="schedule-your-sessions">Schedule your sessions</h3>
-
 <p>The 7DRL gives you 168 hours to work with. I&rsquo;ll guess most people will be able to spend around 50 hours for any given work week and lose the rest of the time to sleep, work, eating and chores. I believe I managed to spend around half of that for my week, if I were to do something similar it again I would probably set aside more time during the weekend.</p>
-
 <h3 id="playability-over-code-quality">Playability over code quality</h3>
-
 <p>I copy-pasted most of the code from the tutorial, except my refactoring of extracting and grouping methods in new classes and to new files. I did end up with a minimal set of global variables, but probably not time well spent. I would probably be able to get the same result in a shorter time by keeping everything in one file and survive with a couple more global variables.</p>
-
 <p>Specifically, the refactoring caused some issues for me when implementing save games on Day 4 and I wasn&rsquo;t able to solve it until the last day. Keeping the same structure would be better for the scope of the week. I&rsquo;d recommend typing out the example code by hand instead of copying. It should give you a more intimate relationship with your code.</p>
-
 <p>I read this advice in the <a href="http://www.gamesofgrey.com/blog/?p=157">Make a 7DRL post</a> by Darren Gray, but ignored it. Don&rsquo;t make the same mistake!</p>
-
 <h3 id="plan-and-keep-a-backlog">Plan and keep a backlog</h3>
-
 <p>The steps of the tutorial was the basis for my initial backlog. I tried splitting the backlog between the days, which worked well. When I got new ideas I added them to the end of the backlog. I have limited experience with the genre so next time I would play a couple games before starting. I&rsquo;d probably get some ideas I could develop further (or steal). I&rsquo;m still satisfied having something playable, even if it&rsquo;s a little &ldquo;vanilla&rdquo;.</p>
-
 <h2 id="features-not-in-the-tutorial">Features not in the tutorial</h2>
-
 <p>We didn&rsquo;t get to the &ldquo;Adventure gear&rdquo;-part of the tutorial, but the game has some other features.</p>
-
 <h3 id="optimal-placement-of-ladders-and-monsters">Optimal placement of ladders and monsters</h3>
-
 <p>The tutorial code places the ladder in a random room. After implementing A* pathfinding, I figured I could use that to calculate the distance from the player&rsquo;s starting position and make sure the ladder was somewhat harder to reach. For monsters I avoided spawning monsters  and items in the first room of each floor. For new players, I think it makes sense to let them figure out the movement and FOV in the first room before proceeding.</p>
-
 <h3 id="inferred-stats-from-level">Inferred stats from level</h3>
-
 <p>Fighter components in the tutorial, which represents the biggest part of the combat system. Skyspire determine your hit points, strength and defense from your level. The player and monsters will get different bonuses for each level, and I had to test a lot to make it balanced. I&rsquo;ve managed to reach player level 7 before dying, but I&rsquo;m not a well-versed roguelike player. Alex, the graphics dude, managed to reach level 10.</p>
-
 <p>You&rsquo;ll find a similar concept in the tutorial, but the implementation is a bit weak.</p>
-
 <h3 id="graphical-tiles-and-audio">Graphical Tiles and audio</h3>
-
 <p>Thanks to @scribbel&rsquo;s work the game has graphical tiles and audio. To me, it makes the game feels more &ldquo;gamey&rdquo;.</p>
-
 <h3 id="deterministic-dungeon-generator">Deterministic Dungeon Generator</h3>
-
 <p>The Skyspire has a seed-based dungeon generator, so you can provide a seed with an environment variable. As a developer it makes it easier for me to debug and you could play the same dungeon as another player to see who&rsquo;s best.</p>
-
 <h3 id="a-bit-more-object-oriented-code">A bit more object-oriented code</h3>
-
 <p>As noted above this is probably not a plus. I lost some time to debugging issues with the save games and reducing global variables to get it to work, but I think I have a better foundation to work on for new features.</p>
-
 <h3 id="monster-ai-state-machine">Monster AI state machine</h3>
-
 <p>The monsters use a simple state machine implementation for their AI. I&rsquo;ve implemented idle and aggro states, and adding monsters fleeing should be simple.</p>
-
 <h3 id="xp-exploration">XP exploration</h3>
-
 <p>The player receives XP when he reaches a new room in the dungeon. This felt natural to me and a concept I&rsquo;ve seen in some MMORPGs.</p>
-
-<h3 id="analytics-via-segment-google-analytics">Analytics via Segment/Google Analytics</h3>
-
+<h3 id="analytics-via-segmentgoogle-analytics">Analytics via Segment/Google Analytics</h3>
 <p>Lastly, the game has some analytics implemented for me so I can track number of active players and how strong the players/monsters are. We collect the following events:</p>
-
 <ul>
 <li>Viewed Main Menu</li>
 <li>Started Game</li>
@@ -140,11 +101,8 @@
 <li>{monster} Defeated Player</li>
 <li>Exited Game</li>
 </ul>
-
 <p>The analytics is anonymous and opt-in so you keep your privacy.</p>
-
 <h2 id="now-what">Now what?</h2>
-
 <ol>
 <li>Use <a href="https://gameanalytics.com/">https://gameanalytics.com/</a> instead of Segment/Google Analytics</li>
 <li>Ladders should be visible outside FOV after explored</li>
