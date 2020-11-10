@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on theodorton.github.io</title>
@@ -35,7 +35,7 @@
       <pubDate>Sat, 18 Apr 2020 23:00:00 +0200</pubDate>
       
       <guid>https://theodorton.github.io/til-march-2020/</guid>
-      <description>Linux  How to mount APFS on linux  remember to sudo apt install libfuse3-dev   How to install and run folding@home on linux Linux has a timeout command You can be creative about clearing your terminal How to use MKL on AMD CPU source  Product[ivity]/development  Rails 5+ has something called ignored_columns (see this and that) rails db:forward, its opposite of db:rollback and their brainchild db:migrate:redo Postgres has a [verbose] IS NOT DISTINCT FROMoperator source Postgres has support for recursive tables via WITH RECURSIVE source You can create temporary tables in Postgres wirh FROM (VALUES ) source Google Sheets has a QUERY function that accepts SQL source You can use !</description>
+      <description>Linux  How to mount APFS on linux  remember to sudo apt install libfuse3-dev  How to install and run folding@home on linux Linux has a timeout command You can be creative about clearing your terminal How to use MKL on AMD CPU source  Product[ivity]/development  Rails 5+ has something called ignored_columns (see this and that) rails db:forward, its opposite of db:rollback and their brainchild db:migrate:redo Postgres has a [verbose] IS NOT DISTINCT FROMoperator source Postgres has support for recursive tables via WITH RECURSIVE source You can create temporary tables in Postgres wirh FROM (VALUES ) source Google Sheets has a QUERY function that accepts SQL source You can use !</description>
     </item>
     
     <item>
@@ -66,7 +66,7 @@ This year I&amp;rsquo;d like to become better at taking notes of the random fact
       
       <guid>https://theodorton.github.io/7drl/</guid>
       <description>tl;dr My friend and I made a roguelike named Skyspire. It&amp;rsquo;s our first roguelike, and first game in a long while. You can find the code on Github.
- A week ago I decided to do a 7DRL Challenge. I&amp;rsquo;ve been tinkering with different game engines since middle school, but I tend to start projects without finishing. I read about the 7DRL concept some time last year, and I figured it seemed like a good idea to actually get to something playable.</description>
+A week ago I decided to do a 7DRL Challenge. I&amp;rsquo;ve been tinkering with different game engines since middle school, but I tend to start projects without finishing. I read about the 7DRL concept some time last year, and I figured it seemed like a good idea to actually get to something playable.</description>
     </item>
     
   </channel>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on theodorton.github.io</title>
@@ -6,19 +6,9 @@
     <description>Recent content in Categories on theodorton.github.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Nov 2020 20:00:00 +0100</lastBuildDate>
     
 	<atom:link href="https://theodorton.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>TIL</title>
-      <link>https://theodorton.github.io/categories/til/</link>
-      <pubDate>Tue, 10 Nov 2020 20:00:00 +0100</pubDate>
-      
-      <guid>https://theodorton.github.io/categories/til/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Gamedev</title>
@@ -26,6 +16,15 @@
       <pubDate>Sat, 21 Apr 2018 13:00:00 +0200</pubDate>
       
       <guid>https://theodorton.github.io/categories/gamedev/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TIL</title>
+      <link>https://theodorton.github.io/categories/til/</link>
+      <pubDate>Tue, 10 Nov 2020 20:00:00 +0100</pubDate>
+      
+      <guid>https://theodorton.github.io/categories/til/</guid>
       <description></description>
     </item>
     

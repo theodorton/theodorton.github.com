@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Gamedev on theodorton.github.io</title>
@@ -18,7 +18,7 @@
       
       <guid>https://theodorton.github.io/7drl/</guid>
       <description>tl;dr My friend and I made a roguelike named Skyspire. It&amp;rsquo;s our first roguelike, and first game in a long while. You can find the code on Github.
- A week ago I decided to do a 7DRL Challenge. I&amp;rsquo;ve been tinkering with different game engines since middle school, but I tend to start projects without finishing. I read about the 7DRL concept some time last year, and I figured it seemed like a good idea to actually get to something playable.</description>
+A week ago I decided to do a 7DRL Challenge. I&amp;rsquo;ve been tinkering with different game engines since middle school, but I tend to start projects without finishing. I read about the 7DRL concept some time last year, and I figured it seemed like a good idea to actually get to something playable.</description>
     </item>
     
   </channel>
