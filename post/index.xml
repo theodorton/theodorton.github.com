@@ -6,10 +6,19 @@
     <description>Recent content in Posts on theodorton.github.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Nov 2020 20:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 02 Oct 2021 10:00:00 +0100</lastBuildDate>
     
 	<atom:link href="https://theodorton.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>TIL: November 2020-October 2021</title>
+      <link>https://theodorton.github.io/til-november-2020-october-2021/</link>
+      <pubDate>Sat, 02 Oct 2021 10:00:00 +0100</pubDate>
+      
+      <guid>https://theodorton.github.io/til-november-2020-october-2021/</guid>
+      <description>bundle add {gem} about pgbench - source Firefox can visualize layout grids - mozilla docs network sockets in shell - source jenv, like rbenv and nodenv for Java ablaut reduplication; hip hop, ping pong, tick tock - wikipedia you can link between Workflowy items cells in Excel (and Google Spreadsheets) can be named basehold.it serves CSS files that can overlay grids to help maintaining vertical rhythm use bin/rspec $(git ls-files --modified spec/) to re-run modified specs how to peel almonds - youtube &amp;lt;&amp;lt;~ heredoc strings in Ruby will strip leading whitespace remove indentation you can use delegate :method, to: :target, private: true in Ruby about rspec&amp;rsquo;s example_status_persistence_file_path and --only-failures/--next-failure which is super helpful when you have a bunch of tests failing on CI and you want to re-run them locally before pushing - docs on macOS you can use ⌘ + Tab then down arrow to switch between windows of an application if you have a slightly broken USB cable - you can wirelessly connect android devices via ADB - docs linux has a tree command Postgres has GREATEST and LEAST functions that are super useful when you need to work with bound values you can use filters for before and after hooks in rspec, and they will only run when example groups have a matching filter js: element.</description>
+    </item>
     
     <item>
       <title>TIL: May-October 2020</title>
