@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on theodorton.github.io</title>
+    <link>https://theodorton.github.io/page/</link>
+    <description>Recent content in Pages on theodorton.github.io</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 21 Apr 2018 12:26:18 +0200</lastBuildDate>
+    
+	<atom:link href="https://theodorton.github.io/page/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>https://theodorton.github.io/about/</link>
+      <pubDate>Sat, 21 Apr 2018 12:26:18 +0200</pubDate>
+      
+      <guid>https://theodorton.github.io/about/</guid>
+      <description>I like to code.</description>
+    </item>
+    
+  </channel>
+</rss>
