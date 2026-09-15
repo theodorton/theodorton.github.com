@@ -31,5 +31,29 @@
         HUGO_THEMESDIR = "${themesDir}";
       };
     }) inputs.nixpkgs.legacyPackages;
+
+    packages = builtins.mapAttrs (system: pkgs: let
+      hugo-natrium-theme = pkgs.fetchFromGitHub {
+        owner = "mobybit";
+        repo = "hugo-natrium-theme";
+        rev = "e2145b8d57ac3a0368860b6d9d708c5fb036a582";
+        hash = "sha256-Ns7yLitRLL2/3K+oTYRZoyBSeN6Tb473LRutt0++qeU=";
+      };
+      themesDir = pkgs.linkFarm "hugo-themes" [
+        { name = "hugo-natrium-theme"; path = hugo-natrium-theme; }
+      ];
+      hugo = inputs.multiverse.legacyPackages.${system}.versions.hugo."0.40.3";
+    in {
+      default = pkgs.stdenv.mkDerivation {
+        pname = "blog";
+        version = "0.0.1";
+        src = pkgs.lib.cleanSource ./.;
+        nativeBuildInputs = [ hugo ];
+        buildPhase = ''
+          hugo --themesDir ${themesDir} -d $out
+        '';
+        dontInstall = true;
+      };
+    }) inputs.nixpkgs.legacyPackages;
   };
 }
