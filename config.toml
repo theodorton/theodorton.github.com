@@ -2,6 +2,7 @@ baseURL = "https://theodorton.github.io/"
 languageCode = "en-us"
 title = "theodorton.github.io"
 theme = "hugo-natrium-theme"
+publishDir = "docs"
 
 preserveTaxonomyNames = true
 rssLimit = 10
