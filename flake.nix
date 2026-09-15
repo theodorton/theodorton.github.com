@@ -3,57 +3,59 @@
 
   inputs = {
     nixpkgs.url = "https://channels.nixos.org/nixpkgs-unstable/nixexprs.tar.zst";
+    flake-parts.url = "github:hercules-ci/flake-parts";
     # Pinned-version package set, so we can get a Hugo old enough for this site.
     multiverse.url = "github:fzakaria/nixpkgs-multiverse";
   };
 
-  outputs = inputs: {
-    devShells = builtins.mapAttrs (system: pkgs: let
-      hugo-natrium-theme = pkgs.fetchFromGitHub {
-        owner = "mobybit";
-        repo = "hugo-natrium-theme";
-        rev = "e2145b8d57ac3a0368860b6d9d708c5fb036a582";
-        hash = "sha256-Ns7yLitRLL2/3K+oTYRZoyBSeN6Tb473LRutt0++qeU=";
-      };
-      themesDir = pkgs.linkFarm "hugo-themes" [
-        { name = "hugo-natrium-theme"; path = hugo-natrium-theme; }
-      ];
-    in {
-      default = pkgs.mkShell {
-        packages = [
-          # The published site is built with Hugo 0.40.x (see the generator meta
-          # tag on theodorton.github.io), and 0.40.3 reproduces it byte for byte.
-          # Hugo 0.60 switched to the Goldmark markdown renderer, which changes
-          # heading anchor ids, and 0.93 dropped the theme's `.Hugo.Generator`.
-          inputs.multiverse.legacyPackages.${system}.versions.hugo."0.40.3"
-          pkgs.git
-        ];
-        HUGO_THEMESDIR = "${themesDir}";
-      };
-    }) inputs.nixpkgs.legacyPackages;
+  outputs = inputs:
+    inputs.flake-parts.lib.mkFlake {inherit inputs;} {
+      systems = ["x86_64-linux" "aarch64-linux" "x86_64-darwin" "aarch64-darwin"];
 
-    packages = builtins.mapAttrs (system: pkgs: let
-      hugo-natrium-theme = pkgs.fetchFromGitHub {
-        owner = "mobybit";
-        repo = "hugo-natrium-theme";
-        rev = "e2145b8d57ac3a0368860b6d9d708c5fb036a582";
-        hash = "sha256-Ns7yLitRLL2/3K+oTYRZoyBSeN6Tb473LRutt0++qeU=";
+      perSystem = {
+        pkgs,
+        system,
+        mv,
+        ...
+      }: let
+        hugo = mv.versions.hugo."0.40.3";
+        hugo-natrium-theme = pkgs.fetchFromGitHub {
+          owner = "mobybit";
+          repo = "hugo-natrium-theme";
+          rev = "e2145b8d57ac3a0368860b6d9d708c5fb036a582";
+          hash = "sha256-Ns7yLitRLL2/3K+oTYRZoyBSeN6Tb473LRutt0++qeU=";
+        };
+        themesDir = pkgs.linkFarm "hugo-themes" [
+          {
+            name = "hugo-natrium-theme";
+            path = hugo-natrium-theme;
+          }
+        ];
+      in {
+        _module.args.mv = inputs.multiverse.legacyPackages.${system};
+
+        packages.default = pkgs.stdenv.mkDerivation {
+          pname = "blog";
+          version = "0.0.1";
+          src = pkgs.lib.cleanSource ./.;
+          nativeBuildInputs = [hugo];
+          buildPhase = ''
+            hugo --themesDir ${themesDir} -d $out
+          '';
+          dontInstall = true;
+        };
+
+        devShells.default = pkgs.mkShell {
+          packages = [
+            # The published site is built with Hugo 0.40.x (see the generator meta
+            # tag on theodorton.github.io), and 0.40.3 reproduces it byte for byte.
+            # Hugo 0.60 switched to the Goldmark markdown renderer, which changes
+            # heading anchor ids, and 0.93 dropped the theme's `.Hugo.Generator`.
+            hugo
+            pkgs.git
+          ];
+          HUGO_THEMESDIR = "${themesDir}";
+        };
       };
-      themesDir = pkgs.linkFarm "hugo-themes" [
-        { name = "hugo-natrium-theme"; path = hugo-natrium-theme; }
-      ];
-      hugo = inputs.multiverse.legacyPackages.${system}.versions.hugo."0.40.3";
-    in {
-      default = pkgs.stdenv.mkDerivation {
-        pname = "blog";
-        version = "0.0.1";
-        src = pkgs.lib.cleanSource ./.;
-        nativeBuildInputs = [ hugo ];
-        buildPhase = ''
-          hugo --themesDir ${themesDir} -d $out
-        '';
-        dontInstall = true;
-      };
-    }) inputs.nixpkgs.legacyPackages;
-  };
+    };
 }
