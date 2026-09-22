@@ -18,7 +18,7 @@
         mv,
         ...
       }: let
-        hugo = mv.versions.hugo."0.58.0";
+        hugo = mv.versions.hugo."0.58.3";
         hugo-natrium-theme = pkgs.fetchFromGitHub {
           owner = "mobybit";
           repo = "hugo-natrium-theme";
