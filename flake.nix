@@ -18,7 +18,7 @@
         mv,
         ...
       }: let
-        hugo = mv.versions.hugo."0.57.2";
+        hugo = mv.versions.hugo."0.58.0";
         hugo-natrium-theme = pkgs.fetchFromGitHub {
           owner = "mobybit";
           repo = "hugo-natrium-theme";
@@ -47,10 +47,9 @@
 
         devShells.default = pkgs.mkShell {
           packages = [
-            # The published site is built with Hugo 0.40.x (see the generator meta
-            # tag on theodorton.github.io), and 0.40.3 reproduces it byte for byte.
-            # Hugo 0.60 switched to the Goldmark markdown renderer, which changes
-            # heading anchor ids, and 0.93 dropped the theme's `.Hugo.Generator`.
+            # Upgrading stepwise from 0.57.2. Known remaining deprecations:
+            # .Hugo.Generator (use hugo.Generator), .URL (use .RelPermalink),
+            # .RSSLink (use OutputFormats). Hugo 0.60 switches to Goldmark.
             hugo
             pkgs.git
           ];
