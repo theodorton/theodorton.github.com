@@ -36,6 +36,11 @@ pygmentsStyle = "native"
     url = "/categories"
     weight = -130
 
+[markup]
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+            unsafe = true
+
 [params]
     description = ""
 
