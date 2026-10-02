@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.92.0" />
+
+
+<title>TIL: 2026 - theodorton.github.io</title>
+<meta property="og:title" content="TIL: 2026 - theodorton.github.io">
+
+
+
+  
+
+
+
+
+
+
+<link rel="stylesheet" href="https://theodorton.github.io/css/main.css" media="all">
+<link rel="stylesheet" href="https://theodorton.github.io/css/fonts.css">
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="https://theodorton.github.io/" class="nav-logo">
+    <img src="https://theodorton.github.io/images/logo.png" 
+         width="50" 
+         height="50" 
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/categories">Categories</a></li>
+    
+    <li><a href="/tags">Tags</a></li>
+    
+    <li><a href="/about/">About</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+  <article class="article">
+    <h1 class="article-title">TIL: 2026</h1>
+    
+    <span class="article-date">2026-10-02</span>
+    
+
+    <div class="article-content">
+      <p>I try to keep this document up to date with things I learn.</p>
+<ul>
+<li>you can run git bisect with a pathspec</li>
+<li>when writing nix modules you can use <code>lib.getExe</code> to get <code>meta.mainProgram</code></li>
+<li><code>git reflog --date=iso</code></li>
+<li>rust has <code>:#?</code> which pretty formats</li>
+<li>ActiveSupport has <a href="https://www.rubydoc.info/gems/activesupport/7.1.0/Module:delegate_missing_to">Module#delegate_missing_to</a></li>
+<li>about prysk which is a test framework for CLI - used by josh
+<a href="https://pypi.org/project/prysk/">https://pypi.org/project/prysk/</a></li>
+<li>zlib can compress streams</li>
+<li><code>jj abandon</code> can be used to revert something</li>
+<li>vscode can run LSP actions on save (not just formatting; see <a href="https://biomejs.dev/assist/#use-assist-actions-in-your-ide">biome example</a>)</li>
+<li>RSpec supports <code>expect { block }.to change(...).by(x).and change(...).by(y)</code></li>
+<li><code>cargo tree -d</code> shows duplicate dependencies</li>
+<li><code>&lt;progress&gt;</code> html element</li>
+<li><code>nix fmt</code> and <a href="https://github.com/numtide/treefmt-nix">treefmt-nix</a></li>
+<li>ruby has <code>Enumerable#lazy</code></li>
+<li>ruby has <code>Enumerable#filter_map</code></li>
+<li><code>cargo tree -i {pkg}</code> works as <code>yarn why {pkg}</code></li>
+<li>fish has a <code>functions</code> function that prints a function body</li>
+<li>Ctrl-z, jobs and fg command <a href="https://unix.stackexchange.com/a/109539">https://unix.stackexchange.com/a/109539</a></li>
+<li><code>jj duplicate</code> is like <code>git cherry-pick</code></li>
+<li>use <code>sudo fs_usage -w -f filesys mds</code> to check what directories spotlight is scanning through <a href="https://apple.stackexchange.com/a/389360">https://apple.stackexchange.com/a/389360</a></li>
+<li>ghostty <a href="https://ghostty.org/docs/install/release-notes/1-2-0#graphical-progress-bars">supports progress bars</a></li>
+<li>DOM screenshotting works by inlining CSS, then using a canvas to render SVG with foreignObject</li>
+<li>you can use <kbd>ctrl+s</kbd> in claude code to stash the current prompt</li>
+<li><code>nm {some-binary}</code> - list symbol names in object files</li>
+<li>bash has printf</li>
+<li>coreutils has printf</li>
+<li>omnifocus supports tabs</li>
+<li>psql can output csv with <code>\pset format csv</code></li>
+<li>firefox has an eyedropper tool</li>
+<li>about indoc (multiline strings for rust) <a href="https://docs.rs/indoc/latest/indoc/">https://docs.rs/indoc/latest/indoc/</a></li>
+<li>cookie API in browser is synchronous and shouldn&rsquo;t be used</li>
+<li>there is legal basis in both US and EU for reverse engineering with the intent of interoperability between computer programs (see <a href="https://github.com/jtsylve/spice-crypt?tab=readme-ov-file#purpose-and-legal-basis">https://github.com/jtsylve/spice-crypt?tab=readme-ov-file#purpose-and-legal-basis</a>)</li>
+<li>amdahls law on parallelism; max 20x speedup when 95% is parallelizable</li>
+<li>heroku uses braille unicode characters for their progress indicator <a href="https://news.ycombinator.com/item?id=47465037">https://news.ycombinator.com/item?id=47465037</a></li>
+<li><kbd>ctrl-u</kbd> in commandline is convention for clear the line, password prompts being a notable example <a href="https://news.ycombinator.com/item?id=47464589">https://news.ycombinator.com/item?id=47464589</a></li>
+<li>about <code>jj fix</code></li>
+<li>if you&rsquo;re using firefox, you can generally juts <kbd>ctrl-click</kbd> on the page. It&rsquo;ll draw outlines around every child element without reflowing. chias @ <a href="https://news.ycombinator.com/item?id=49868739">https://news.ycombinator.com/item?id=49868739</a></li>
+<li><code>systemctl edit {some-service}</code> <a href="https://willpower232.github.io/computing/self-hosted-git.html">https://willpower232.github.io/computing/self-hosted-git.html</a></li>
+<li>about semgrep</li>
+</ul>
+
+    </div>
+ 
+    <ul class="article-taxonomy">
+                  
+      <hr>
+      <li>
+        <i class="fa fa-category"></i><a href="/categories/til">TIL</a>
+      </li>
+      
+    
+      
+  </article>
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="https://theodorton.github.io/index.xml" type="application/rss+xml" target="_blank"><i class="fa fa-rss"></i> RSS feed</a>
+          </li>
+          <li>
+            <a href="https://github.com/mobybit/hugo-natrium-theme"><i class="fa fa-github"></i> Code</a>
+          </li>
+          <li>
+            <a href="https://theodorton.github.io/site-notice">Site notice</a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+
+  </body>
+</html>
+
